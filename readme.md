@@ -35,7 +35,7 @@ This task consists in designing a path planning algorithm for the robot to effic
 
 ## Submit your answers
 
-To submit your completed assignment, **please fork this repository**, complete the tasks, and then push your changes to your fork. Once done, send us the link to your forked repository at felix.shiegg@paltech.eu with the subject line "Assignment Submission - [Your Name]". Ensure your repository is public so we can review your work.
+To submit your completed assignment, **please fork this repository**, complete the tasks, and then push your changes to your fork. Once done, send us the link to your forked repository at felix.schiegg@paltech.eu with the subject line "Assignment Submission - [Your Name]". Ensure your repository is public so we can review your work.
 
 
 
