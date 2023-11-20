@@ -1,4 +1,4 @@
-# Paltech Assigment
+# Paltech Assingment
 
 ## Part 1: Basic waypoint manager in ROS2
 
