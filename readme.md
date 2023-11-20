@@ -31,7 +31,7 @@ This task consists in designing a path planning algorithm for the robot to effic
 **BONUS:**  
 
 - Integrate your path planning code into a ROS2 node that calls the service to retrieve waypoints from the waypoint manager and publishes the calculated path.
-- How does the path planning change if we allow the robot to move in reverse? (REED_SHEPP motion model instead of DUBINS)
+- How does the path planning change if we allow the robot to move in reverse? (REEDS_SHEPP motion model instead of DUBINS)
 
 ## Submit your answers
 
