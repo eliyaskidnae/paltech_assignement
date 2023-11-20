@@ -1,4 +1,4 @@
-# Paltech Assingment
+# Paltech Assignment
 
 ## Part 1: Basic waypoint manager in ROS2
 
@@ -14,28 +14,24 @@ Plot the waypoints (X,Y,yaw) in robot coordinate frame using matplotlib or anoth
 
 ## Part 2: Path Planning 
 
-This task consists in designing a path planning algorithm for the robot to efficiently follow waypoints:  
+This task consists of designing a path planning algorithm for the robot to efficiently follow waypoints:  
 
-- Generate 500 random GPS points distributed in an area of 200 m². These points represent weed positions.
-- Over the M points just created, add a cluster of approximately 2-5 plants around each point to simulate weed clusters. This can be achieved using a normal distribution with a radius of 5 meters.
-- Starting from an initial robot position, sort the generated points in a way that maximizes the number of plants processed in the shortest possible time.
-- Calculate the arrival angle at each waypoint to avoid excessively sharp curves during waypoint following.
-- Plot the calculated path, connecting the waypoints with lines to represent the travel route.
-
-
-**Comments:**  
-
-- The robot is non-holonomic and follows a Dubins motion model with a minimum turning radius of 2 meters.
-- It is not necessary for the robot to reach every generated point. Points that are unreachable due to the robot's turning radius constraints can be omitted from the plan.
+- Generate M random GPS points (e.g. 500) distributed in an area of 1000 m². These points represent weed positions.
+- Add a cluster of approximately 2-10 plants around 50% of the M points to simulate weed clusters. This can be achieved using a normal distribution with a standard deviation of 3 meters.
+- Randomly assign a starting position to the robot and perform path planning for it with the following constraints:
+    - The robot is non-holonomic and follows a Dubins motion model with a minimum turning radius of 2 meters.
+    - It is not necessary for the robot to reach every generated point. Points that are unreachable due to the robot's turning radius constraints can be omitted from the plan.
+- Plot the calculated path. You may simplify the path using straight lines.
+- Output the time and path length of the calculated path (you can assume a constant velocity of 1m/s)
 
 **BONUS:**  
 
-- Integrate your path planning code into a ROS2 node that calls the service to retrieve waypoints from the waypoint manager and publishes the calculated path.
-- How does the path planning change if we allow the robot to move in reverse? (REEDS_SHEPP motion model instead of DUBINS)
+- How does the path planning change if we allow the robot to move in reverse? (REEDS_SHEPP motion model instead of DUBINS) Explain.
+- What would happen if the working area of the robot is taken into account? E.G. the robot can remove weeds that are in a radius of 0,5m around its center. Explain.
 
 ## Submit your answers
 
-To submit your completed assignment, **please fork this repository**, complete the tasks, and then push your changes to your fork. Once done, send us the link to your forked repository at felix.schiegg@paltech.eu with the subject line "Assignment Submission - [Your Name]". Ensure your repository is public so we can review your work.
+To submit your completed assignment, **please fork this repository**, complete the tasks by November 30th, and then push your changes to your forked repository. Once done, send us the link to your forked repository to felix.schiegg@paltech.eu with the subject line "Assignment Submission - [Your Name]". Ensure your repository is public so we can review your work.
 
 
 
